@@ -4,18 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
     <title>SBD MadLibs 	🐾</title>
 </head>
 <body>
-    <header>Welcome to SBD Mad Libs. <br> For Those About to ROCK! We SALUTE you!</header>
+    <header>
+        <div id="tiger1"></div>
+        Welcome to SBD Mad Libs. <br> For Those About to ROCK! We SALUTE you!
+    
+    </header>
 
+    <form action="noun">
+        <label for="noun">Choose a Noun</label>
+        <select name="noun" id="noun">
+            <option>empty</option>
+            <option>Parkey</option>
+            <option>Neb Vaupel</option>
+            <option>Haha (Clinton-Dix)</option>
+            <option>Kamala Harris</option>
+            <option>Tom Cruise</option>
+            <option>Bears</option>
+            <option>Megan Fox</option>
+        </select>
+    </form>
 
+    <form action="verb">
+        <label for="verb">Choose a Verb</label>
+        <select name="verb" id="verb">
+            <option>empty</option>
+            <option>run</option>
+            <option>swim</option>
+            <option>jump</option>
+            <option>float</option>
+            <option>dance</option>
+        </select>
+    </form>
+   
+    <form action="adj">
+        <label for="adj">Choose an Adjective</label>
+        <select name="adj" id="adj">
+            <option>empty</option>
+            <option>brown</option>
+            <option>white</option>
+            <option>busty</option>
+            <option>tall</option>
+            <option>hung</option>
+        </select>
+    </form>
 
-
-
-
-
+    <form action="adv">
+        <label for="adv">Choose an Adverb</label>
+        <select name="adv" id="adv">
+            <option>empty</option>
+            <option>daily</option>
+            <option>quickly</option>
+            <option>silently</option>
+            <option>sweetly</option>
+            <option>mechanically</option>
+        </select>
+    </form>
 
     
     <script src="./assets/script.js"></script>
