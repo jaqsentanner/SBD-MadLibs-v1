@@ -3,11 +3,61 @@
 }
 
 header {
+    padding-top:20px;
     text-align:center;
     font-size:25px;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Zen Dots';
 }
 
 #tiger1 {
     background-image: url(./media/StewTig1.png);
 }
+
+.style {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+.noun, .verb, .adj, .adv {
+    color: maroon;
+}
+
+button {
+    border-color:white;
+    color:maroon;
+    background-color: rgb(194,155,55);
+}
+
+#button {
+    border-color:white;
+    color:maroon;
+    background-color: rgb(194,155,55);
+}
+
+#button2 {
+    border-color:white;
+    color:maroon;
+    background-color: rgb(194,155,55);
+}
+
+section {
+    display:flex;
+    justify-content: center;
+    padding-top:50px;
+}
+
+.speechPartTitle {
+    color:white;
+}
+
+#nounAnswer, #verbAnswer, #adjAnswer, #advAnswer {
+    color: maroon;
+}
+
+#answerBlock {
+    text-align:center;
+    padding-top:10px;
+}
+
+

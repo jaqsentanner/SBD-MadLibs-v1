@@ -1,55 +1,47 @@
-/* let noun1 = "Parkey";
-let noun2 = "Neb Vaupel";
-let noun3 = "Haha (Clinton-Dix)";
-let noun4 = "Kamala Harris";
-let noun5 = "Tom Cruise";
+var clearButton = document.getElementById('button2')
+var titleBox = document.getElementById('titleBlock');
+var storyBox = document.getElementById('storyBlock');
 
-let adj1 = "brown";
-let adj2 = "white";
-let adj3 = "tall";
-let adj4 = "busty";
-let adj5 = "hung";
+function hideClear() {
+    
+    clearButton.style.display = "none";
+};
 
-let verb1 = "run";
-let verb2 = "jump";
-let verb3 = "swim";
-let verb4 = "yerk";
-let verb5 = "smoke";
+hideClear();
 
-let adv1 = "daily";
-let adv2 = "quickly";
-let adv3 = "silently";
-let adv4 = "sweetly";
-let adv5 = "mechanically"; 
 
-console.log("Yesterday, " + noun2 + " was busy going on a " + verb1 + " so that he can prepare himself for his " + adv1 + " " + verb4); */
+function test() {
 
-// original story text goes here
+    var nounChoice = document.getElementById('nounAnswer').value;
+    var verbChoice = document.getElementById('verbAnswer').value;
+    var adjChoice = document.getElementById('adjAnswer').value;
+    var advChoice = document.getElementById('advAnswer').value;
+    
 
-// nate's workshop script below
 
-// utilize template literals
+    const title = "A Tale of the Town";
+    
+    let story1 = `Two years ago on the 4th of July, ${nounChoice} got a little too twisted on the smoke
+                  and sauce. The smell of ${adjChoice} sex lingered ${advChoice} in the air. Confused about
+                  what was ruffing up the butthole.. ${nounChoice} had no choice but to ${verbChoice} back to
+                  town carefully.`
+    console.log(`${title} : ${story1}`);
 
-const fs = require("fs");
+    titleBox.textContent = title;
+    titleBox.append = (title);
+    storyBox.textContent = story1;
+    storyBox.append = (story1);
 
-function writestory() {
+    clearButton.style.display = 'inline';
 
-    const character = ["Parkey", "Neb Vaupel", "Haha (Clinton-Dix)", "Kamala Harris", "Tom Cruise", "Bears", "Megan Fox"];
+    
+};
 
-    const adj = ["brown", "white", "busty", "tall", "hung"];
+function clearStory() {
+    titleBox.textContent = '';
+    storyBox.textContent = '';
+    clearButton.style.display = 'none';
+};
 
-    const verbs = ["run", "swim", "jump", "float", "dance"];
-
-    const advs = ["daily", "quickly", "silently", "sweetly", "mechanically"];
-
-    const pleasantDescriptor = "charming";
-
-    const story = `"original mad libs story with " + ${character} + " running downtown quickly. Mike Thomposin skipped slowly";`
-
-    fs.appendFile("story.txt", story)
-
-    console.log(story);
-
-}
 
 
